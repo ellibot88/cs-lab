@@ -1,4 +1,5 @@
 const perf = require("execution-time")();
+const complexity = require("complexity-report");
 
 //1. Sum Zero
 
@@ -24,6 +25,8 @@ const sumZero = (arr) => {
 
 console.log(sumZero([5, 5, 4, 1, 2, 3, 5]));
 
+//Runtime complexity for sumZero: O(n^2)
+
 //2. Unique Characters
 
 const unique = (word) => {
@@ -39,6 +42,8 @@ const unique = (word) => {
   }
   return answer;
 };
+
+//Runtime complexity for unique: O(n^2)
 
 console.log(unique("Elliott"));
 
@@ -61,6 +66,8 @@ const pangrams = (str) => {
 
 console.log(pangrams("The quick brown fox jumps over the lazy dog"));
 
+//Runtime complexity for Pangrams: O(n)
+
 //4. Longest word
 
 const longestWord = (arr) => {
@@ -73,6 +80,8 @@ const longestWord = (arr) => {
   }
   return longest;
 };
+
+//Runtime complexity for longest word: O(n)
 
 console.log(longestWord(["hi", "hello", "what the literal"]));
 
